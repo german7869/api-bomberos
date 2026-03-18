@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'bq.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
- DATABASES = {
+DATABASES = {
     'default': dj_database_url.config(
         default=os.getenv("DATABASE_URL"),
         conn_max_age=600
